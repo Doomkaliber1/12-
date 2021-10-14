@@ -13,17 +13,5 @@ namespace DbProductsORM.Data.Models
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
-
-    }
-    private void Add()
-    {
-        Product product = new Product();
-        Console.WriteLine("Enter name:");
-        product.Name = Console.ReadLine();
-        Console.WriteLine("Enter price:");
-        product.Price = decimal.Parse(Console.ReadLine());
-        Console.WriteLine("Enter stock:");
-        product.Stock = int.Parse(Console.ReadLine());
-        productBusiness.Add(product);
-    }
+    } 
 }

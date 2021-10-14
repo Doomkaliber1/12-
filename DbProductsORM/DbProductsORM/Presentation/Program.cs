@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DbProductsORM.Data.Models;
+using DbProductsORM.Presentation;
+using System;
 
 namespace DbProductsORM
 {
@@ -6,7 +8,9 @@ namespace DbProductsORM
     {
         static void Main(string[] args)
         {
-            
+            ProductContext db = new ProductContext();
+            db.Database.EnsureCreated();
+            Display display = new Display();
         }
     }
 }

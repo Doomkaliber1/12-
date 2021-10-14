@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DbProductsORM.Business
 {
-    class ProductBusiness
+    class productBusiness
     {
         private ProductContext productContext;
         public List<Product> GetAll()
@@ -57,5 +57,6 @@ namespace DbProductsORM.Business
                 }
             }
         }
+
     }
 }
